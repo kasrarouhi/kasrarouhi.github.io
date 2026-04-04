@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasra Rouhi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/research.css" />
+  <link rel="stylesheet" href="css/experience.css" />
+  <link rel="stylesheet" href="css/reviewer.css" />
+  <link rel="stylesheet" href="css/social.css" />
+</head>
+<body>
+
+<!-- scroll progress -->
+<div id="scroll-progress"></div>
+
+
+<!-- animated particle canvas -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- aurora orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- nav — floating pill -->
+<nav>
+  <div class="nav-logo">KR</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#reviewer">Reviewer</a></li>
+    <li><a href="#pages">Pages</a></li>
+    <li><a href="#social">Social</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+
+  <!-- decorative pulsing rings -->
+  <div class="hero-rings">
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Electrical Engineer, Programmer &amp; Researcher</div>
+    <h1 class="hero-name">Kasra <span>Rouhi</span></h1>
+    <p class="hero-subtitle">
+      RF Design Engineer, and Ph.D. in Electrical Engineering and Computer Science.
+      Research spanning metamaterials, metasurfaces, machine learning, sensors, electron beam devices, and bioelectromagnetics.
+      Passionate about bridging cutting-edge electromagnetic theory with real-world engineering and scientific discovery.
+      Actively applying machine learning and AI (using Python, TensorFlow, and PyTorch) to accelerate the design and optimization of passive electromagnetic devices.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn btn-outline" href="https://scholar.google.com/citations?user=ReDDTRIAAAAJ&hl=en" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+        Google Scholar
+      </a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/kasra-rouhi-8a954311a/" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-num">01</div>
+  <div class="fade-in">
+    <div class="section-tag">Who I am</div>
+    <h2 class="section-title">About <em>Me</em></h2>
+  </div>
+  <div class="about-grid fade-in">
+    <div class="about-text">
+      <p>
+        I am <span class="highlight">Kasra Rouhi</span>, an RF and electromagnetic
+        engineer currently serving as an RF Passive Design Engineer
+        at Apple Inc. My work sits at the intersection of electromagnetic theory and
+        machine learning, applied to the precision demands of next-generation consumer hardware.
+      </p>
+      <p>
+        I hold a Ph.D. in Electrical Engineering & Computer Science from the University of California, Irvine, where my
+        doctoral research — funded by AFOSR and NSF — advanced the modeling of electron
+        beam devices and pioneered ultrasensitive circuits exploiting exceptional points
+        of degeneracy (EPD). Near these special operating points, eigenvalue trajectories
+        follow fractional power-law dependencies on external perturbations, enabling
+        sensors with orders-of-magnitude improved sensitivity.
+        Complementing this, my thesis also developed analytical and computational
+        models for traveling wave tubes (TWTs), including Pierce-model extensions and
+        full-wave approaches that capture gain, dispersion, and beam-wave interaction
+        with greater accuracy.
+      </p>
+      <p>
+        My research spans a broad spectrum: metamaterials and
+        metasurfaces for terahertz wave control, machine
+        learning for accelerated electromagnetic device design,
+        reconfigurable graphene-based structures, and bioelectromagnetics. I have authored over 70
+        publications across high-impact journals including IEEE,
+        Physical Review, IOP Publishing, AIP Publishing, Wiley, and Elsevier journals,
+        along with conference proceedings and preprints.
+      </p>
+      <p>
+        Beyond research, I actively contribute to the scientific community as a
+        peer reviewer for over 100 journals across IEEE,
+        Optica, IOP Publishing, Wiley, Elsevier, Nature, ACS, and many others, and have
+        been recognized as a certified and trusted reviewer by multiple publishers.
+        I have also served as a keynote speaker of conferences, IEEE student branch chair, and
+        leader of graduate researchers.
+      </p>
+    </div>
+    <div class="glass about-card" style="padding:0; overflow:hidden; display:flex; align-items:stretch;">
+      <img
+        src="images/KasraPersonal.jpg"
+        alt="Kasra Rouhi"
+        style="width:100%; height:100%; object-fit:cover; object-position:center top; display:block; border-radius:var(--radius);"
+      />
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <div class="section-num">02</div>
+  <div class="fade-in">
+    <div class="section-tag">Academic Journey</div>
+    <h2 class="section-title">Education &amp; <em>Degrees</em></h2>
+  </div>
+  <div class="timeline fade-in">
+
+    <!-- PhD — UCI -->
+    <div class="glass timeline-item">
+      <div class="card-accent-bar"></div>
+      <div class="tl-header">
+        <div class="tl-header-text">
+          <a class="tl-school" href="https://en.wikipedia.org/wiki/University_of_California,_Irvine" target="_blank" style="color:inherit;text-decoration:none;">University of California, Irvine</a>
+          <div class="tl-period">Sep. 2019 – Nov. 2024 &nbsp;·&nbsp; Irvine, CA, USA</div>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/University_of_California,_Irvine" target="_blank"><img class="tl-badge" src="images/EduExp/UCI.png" alt="UCI" width="56" height="56" /></a>
+      </div>
+      <div class="tl-degree">Doctor of Philosophy — Electrical Engineering and Computer Science</div>
+      <div class="tl-meta">Circuits and Devices (Electromagnetics)</div>
+      <div class="tl-detail">
+        <span class="tl-label">Thesis:</span> <a href="https://www.proquest.com/openview/66f14b600462f90610e6053b3de5a684/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank" style="color:inherit;border-bottom:1px solid rgba(255,255,255,0.2);text-decoration:none;"><em>"Advancement in The Modeling of Electron Beam Devices and Ultrasensitive Circuits"</em></a><br/>
+        <span><span class="tl-label">Advisors:</span> <a href="https://scholar.google.com/citations?user=7sWY6GUAAAAJ&hl=en" target="_blank" style="color:inherit;border-bottom:1px solid rgba(255,255,255,0.2);text-decoration:none;">Prof. Filippo Capolino</a> &amp; <a href="https://scholar.google.com/citations?user=Q_zmKOEAAAAJ&hl=en" target="_blank" style="color:inherit;border-bottom:1px solid rgba(255,255,255,0.2);text-decoration:none;">Prof. Alexander Figotin</a></span>
+      </div>
+      <div class="tl-badges-row">
+        <span class="tl-gpa">Highest Honors</span>
+      </div>
+    </div>
+
+    <!-- MSc — IUST -->
+    <div class="glass timeline-item">
+      <div class="card-accent-bar"></div>
+      <div class="tl-header">
+        <div class="tl-header-text">
+          <a class="tl-school" href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank" style="color:inherit;text-decoration:none;">Iran University of Science &amp; Technology</a>
+          <div class="tl-period">Sep. 2015 – Sep. 2018 &nbsp;·&nbsp; Tehran, Tehran, Iran</div>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank"><img class="tl-badge" src="images/EduExp/IUST.png" alt="IUST" width="56" height="56" /></a>
+      </div>
+      <div class="tl-degree">Master of Science — Electrical Engineering</div>
+      <div class="tl-meta">Electromagnetic Fields and Waves</div>
+      <div class="tl-detail">
+        <span class="tl-label">Thesis:</span> <em>"Control of Scattering Electromagnetic Waves from Flat Surfaces by Using Controllable Metasurfaces in the Terahertz Band"</em><br/>
+        <span class="tl-label">Advisor:</span> <a href="https://scholar.google.com/citations?user=JYpUTf8AAAAJ&hl=en" target="_blank" style="color:inherit;border-bottom:1px solid rgba(255,255,255,0.2);text-decoration:none;">Prof. Ali Abdolali</a></span>
+      </div>
+      <div class="tl-badges-row">
+        <span class="tl-gpa">Highest Honors</span>
+      </div>
+    </div>
+
+    <!-- BSc — IUST -->
+    <div class="glass timeline-item">
+      <div class="card-accent-bar"></div>
+      <div class="tl-header">
+        <div class="tl-header-text">
+          <a class="tl-school" href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank" style="color:inherit;text-decoration:none;">Iran University of Science &amp; Technology</a>
+          <div class="tl-period">Sep. 2011 – Sep. 2015 &nbsp;·&nbsp; Tehran, Tehran, Iran</div>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank"><img class="tl-badge" src="images/EduExp/IUST.png" alt="IUST" width="56" height="56" /></a>
+      </div>
+      <div class="tl-degree">Bachelor of Science — Electrical Engineering</div>
+      <div class="tl-meta">Communications</div>
+      <div class="tl-detail">
+        <span class="tl-label">Thesis:</span> <em>"Design and Simulation of Metamaterial Lenses for Bioelectromagnetic Applications"</em><br/>
+        <span class="tl-label">Advisor:</span> <a href="https://scholar.google.com/citations?user=JYpUTf8AAAAJ&hl=en" target="_blank" style="color:inherit;border-bottom:1px solid rgba(255,255,255,0.2);text-decoration:none;">Prof. Ali Abdolali</a></span>
+      </div>
+      <div class="tl-badges-row"></div>
+    </div>
+
+    <!-- High School — Allameh Helli -->
+    <div class="glass timeline-item">
+      <div class="card-accent-bar"></div>
+      <div class="tl-header">
+        <div class="tl-header-text">
+          <a class="tl-school" href="https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents" target="_blank" style="color:inherit;text-decoration:none;">Allameh Helli High School — SAMPAD</a>
+          <div class="tl-period">Sep. 2007 – Sep. 2011 &nbsp;·&nbsp; Tehran, Tehran, Iran</div>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents" target="_blank"><img class="tl-badge" src="images/EduExp/Helli.svg" alt="SAMPAD" width="56" height="56" /></a>
+      </div>
+      <div class="tl-degree">Diploma — Mathematics and Physics</div>
+      <div class="tl-meta" style="color:#4ade80;">National Organization for Development of Exceptional Talents (SAMPAD)</div>
+      <div class="tl-detail">
+        Selective national program for exceptionally gifted students. Focused on advanced
+        mathematics and physics in preparation for university entrance.
+      </div>
+      <div class="tl-badges-row"></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── RESEARCH ── -->
+<section id="research">
+  <div class="section-num">03</div>
+  <div class="fade-in">
+    <div class="section-tag">Scientific Focus &amp; Research Area</div>
+    <h2 class="section-title">Research <em>Interests</em></h2>
+  </div>
+  <div class="research-grid fade-in">
+
+    <a class="glass research-card" href="https://en.wikipedia.org/wiki/Metamaterial" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img class="rc-icon" src="images/Research/Metasurface.png" alt="Metamaterials" style="shape-outside:url('images/Research/Metasurface.png')">
+      <div class="rc-title">Metamaterials &amp; Metasurfaces</div>
+      <div class="rc-desc">Engineering artificial electromagnetic materials and two-dimensional surfaces with precisely tailored properties for advanced wave manipulation and control. Research spans beam shaping, reconfigurable wavefront engineering, real-time terahertz wave control, frequency-selective surfaces, and tunable material integration. These engineered structures enable unprecedented independent control over the amplitude, phase, and polarization of electromagnetic waves, with broad applications in sensing, wireless communications, high-resolution imaging, electromagnetic stealth, holography, and beam focusing across microwave, terahertz, and optical frequency regimes.</div>
+    </a>
+
+    <a class="glass research-card" href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img class="rc-icon" src="images/Research/Machine Learning.png" alt="Machine Learning" style="shape-outside:url('images/Research/Machine Learning.png')">
+      <div class="rc-title">Machine Learning</div>
+      <div class="rc-desc">Applying artificial intelligence and deep learning techniques to accelerate the design, optimization, and inverse synthesis of electromagnetic structures and devices. Neural network architectures serve as surrogate models that replace computationally intensive full-wave simulations, enabling rapid exploration of vast design spaces for antennas, metasurfaces, and photonic devices. This data-driven approach bridges the gap between theoretical electromagnetic modeling and practical hardware engineering, uncovering high-performance device configurations that conventional parameter-sweep methods would fail to identify within reasonable time frames.</div>
+    </a>
+
+    <a class="glass research-card" href="https://en.wikipedia.org/wiki/Sensor" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img class="rc-icon" src="images/Research/Sensor.png" alt="Sensors" style="shape-outside:url('images/Research/Sensor.png')">
+      <div class="rc-title">Sensors</div>
+      <div class="rc-desc">Designing ultrasensitive sensing systems that exploit exceptional points in coupled resonator circuits and wave-guiding structures. These operating points arise when both eigenvalues and eigenvectors simultaneously coalesce. Near these special operating points, eigenvalue trajectories follow fractional power-law dependencies on external perturbations, producing dramatically amplified frequency shifts in response to tiny physical changes. This approach enables sensors with orders-of-magnitude improved sensitivity compared to conventional designs, with potential applications spanning chemical detection, mechanical perturbation sensing, gyroscopes, and precision measurement across both radio-frequency and optical domains.</div>
+    </a>
+
+    <a class="glass research-card" href="https://en.wikipedia.org/wiki/Traveling-wave_tube" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img class="rc-icon" src="images/Research/Electron Beam Device.png" alt="Electron Beam Devices" style="shape-outside:url('images/Research/Electron Beam Device.png')">
+      <div class="rc-title">Electron Beam Devices</div>
+      <div class="rc-desc">Developing advanced small-signal analytical models for traveling wave tubes using serpentine and helix waveguide slow-wave structures, extending the classical Pierce model to account for dispersive frequency-dependent parameters and space-charge effects. Research investigates exceptional degeneracies in beam-wave interaction systems, multi-stage sever configurations, and parametric modeling validated against particle-in-cell simulations. These vacuum electronic devices remain critical for high-power microwave amplification in satellite communications, radar systems, and directed-energy applications where solid-state amplifiers cannot match the required power levels.</div>
+    </a>
+
+    <a class="glass research-card" href="https://en.wikipedia.org/wiki/Graphene" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img class="rc-icon" src="images/Research/Graphene.png" alt="Reconfigurable Materials" style="shape-outside:url('images/Research/Graphene.png')">
+      <div class="rc-title">Reconfigurable Materials</div>
+      <div class="rc-desc">Investigating tunable electromagnetic devices built on field-effect materials whose properties can be actively controlled by external stimuli. Graphene, a single-atom-thick carbon lattice, is the primary platform: its surface conductivity responds continuously to gate voltage or chemical doping, enabling real-time control of terahertz wave reflection, transmission, and phase for orbital angular momentum generation, programmable beam steering, and multi-channel communications. Vanadium dioxide undergoes a reversible metal-to-insulator phase transition under thermal excitation, enabling switchable multifocal metalens designs. Indium tin oxide offers voltage-tunable permittivity at near-infrared frequencies, complementing graphene in photonic reconfigurable architectures.</div>
+    </a>
+
+    <a class="glass research-card" href="https://en.wikipedia.org/wiki/Bioelectromagnetics" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img class="rc-icon" src="images/Research/BioElectromagnetics.png" alt="Bioelectromagnetics" style="shape-outside:url('images/Research/BioElectromagnetics.png')">
+      <div class="rc-title">Bioelectromagnetics</div>
+      <div class="rc-desc">Applying engineered electromagnetic fields and metamaterial lens designs to biomedical applications including targeted hyperthermia treatment, biosensing, and high-resolution imaging. Research explores how artificially structured materials can focus and reshape electromagnetic energy on the subwavelength scale, enabling non-invasive diagnostic techniques and localized therapeutic interventions. Investigations span the interaction of electromagnetic fields with biological tissues across microwave and terahertz frequency ranges, with an emphasis on safe exposure levels, field penetration depth, and the design of applicators optimized for specific clinical scenarios.</div>
+    </a>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="section-num">04</div>
+  <div class="fade-in">
+    <div class="section-tag">Work History</div>
+    <h2 class="section-title">Professional <em>Experience</em></h2>
+  </div>
+  <div class="exp-grid fade-in">
+
+    <div class="glass exp-card">
+      <div class="card-accent-bar"></div>
+      <div class="exp-logo"><a href="https://en.wikipedia.org/wiki/Apple_Inc." target="_blank" style="display:block;width:100%;height:100%;border-radius:inherit;"><img src="images/EduExp/Apple.svg" alt="Apple" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff;padding:6px;"></a></div>
+      <div class="exp-body">
+        <div class="exp-role">RF Passive Design Engineer</div>
+        <div class="exp-company"><a href="https://en.wikipedia.org/wiki/Apple_Inc." target="_blank" style="color:inherit;text-decoration:none;">Apple Inc.</a> — Advanced Technologies Group | SIPI EM Team</div>
+        <div class="exp-period">Dec. 2024 – Present &nbsp;·&nbsp; San Diego, CA, USA</div>
+        <div class="exp-desc">
+          Designing passive RF and electromagnetic devices for next-generation hardware products within Apple's Advanced Technologies Group. Applying advanced EM simulation and design methodologies to design challenges, bridging cutting-edge electromagnetic theory with real-world engineering. Leveraging machine learning and AI-driven optimization to accelerate passive EM device design and inverse synthesis workflows.
+        </div>
+      </div>
+    </div>
+
+    <div class="glass exp-card">
+      <div class="card-accent-bar"></div>
+      <div class="exp-logo"><a href="https://en.wikipedia.org/wiki/University_of_California,_Irvine" target="_blank" style="display:block;width:100%;height:100%;border-radius:inherit;"><img src="images/EduExp/UCI.png" alt="UC Irvine" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff;padding:4px;"></a></div>
+      <div class="exp-body">
+        <div class="exp-role">Research Assistant (Ph.D.)</div>
+        <div class="exp-company"><a href="https://en.wikipedia.org/wiki/University_of_California,_Irvine" target="_blank" style="color:inherit;text-decoration:none;">University of California, Irvine</a> — EECS Department</div>
+        <div class="exp-period">Sep. 2019 – Nov. 2024 &nbsp;·&nbsp; Irvine, CA, USA</div>
+        <div class="exp-desc">
+          Conducted doctoral research under Prof. Filippo Capolino and Prof. Alexander Figotin on AFOSR- and NSF-funded projects, advancing the modeling of electron beam devices and ultrasensitive circuits by exploiting exceptional points of degeneracy. Developed analytical models for traveling wave tubes, designed gyrator-based sensing circuits with eigenvalue sensitivity, and published extensively in high-impact journals and conferences.
+        </div>
+      </div>
+    </div>
+
+    <div class="glass exp-card">
+      <div class="card-accent-bar"></div>
+      <div class="exp-logo"><a href="https://en.wikipedia.org/wiki/Apple_Inc." target="_blank" style="display:block;width:100%;height:100%;border-radius:inherit;"><img src="images/EduExp/Apple.svg" alt="Apple" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff;padding:6px;"></a></div>
+      <div class="exp-body">
+        <div class="exp-role">EM Design Intern</div>
+        <div class="exp-company"><a href="https://en.wikipedia.org/wiki/Apple_Inc." target="_blank" style="color:inherit;text-decoration:none;">Apple Inc.</a> — PACE SIPI EM Team</div>
+        <div class="exp-period">Jun. 2024 – Sep. 2024 &nbsp;·&nbsp; San Diego, CA, USA</div>
+        <div class="exp-desc">
+          Designed passive electromagnetic devices using deep learning techniques within Apple's PACE EM team. Applied machine learning and AI-driven optimization methods to accelerate the design and inverse synthesis of passive EM structures for different applications.
+        </div>
+      </div>
+    </div>
+
+    <div class="glass exp-card">
+      <div class="card-accent-bar"></div>
+      <div class="exp-logo"><a href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank" style="display:block;width:100%;height:100%;border-radius:inherit;"><img src="images/EduExp/IUST.png" alt="IUST" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff;padding:4px;"></a></div>
+      <div class="exp-body">
+        <div class="exp-role">Research Scientist</div>
+        <div class="exp-company"><a href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank" style="color:inherit;text-decoration:none;">Iran University of Science &amp; Technology</a> — Metasurface Lab</div>
+        <div class="exp-period">Sep. 2018 – Sep. 2019 &nbsp;·&nbsp; Tehran, Tehran, Iran</div>
+        <div class="exp-desc">
+          Conducted research on graphene-based metasurfaces for next-generation wireless communication systems under the supervision of Dr. S. Ehsan Hosseininejad. Investigated reprogrammable digital metasurface architectures at terahertz frequencies for multi-channel near-field communications, planar lens, terahertz wave manipulation and high-speed data transmission beyond 5G.
+        </div>
+      </div>
+    </div>
+
+    <div class="glass exp-card">
+      <div class="card-accent-bar"></div>
+      <div class="exp-logo"><a href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank" style="display:block;width:100%;height:100%;border-radius:inherit;"><img src="images/EduExp/IUST.png" alt="IUST" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;background:#fff;padding:4px;"></a></div>
+      <div class="exp-body">
+        <div class="exp-role">MSc Students Research Leader</div>
+        <div class="exp-company"><a href="https://en.wikipedia.org/wiki/Iran_University_of_Science_and_Technology" target="_blank" style="color:inherit;text-decoration:none;">Iran University of Science &amp; Technology</a> — Applied EM Lab</div>
+        <div class="exp-period">Nov. 2017 – Sep. 2020 &nbsp;·&nbsp; Tehran, Tehran, Iran</div>
+        <div class="exp-desc">
+          Led and co-advised a group of three MSc students in the Applied Electromagnetic Lab, supervising research in tunable metasurfaces, terahertz wave manipulation, and reconfigurable intelligent surfaces. Guided students from topic formulation through numerical validation and publication, contributing to multiple peer-reviewed journal papers.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PUBLICATIONS ── -->
+<section id="publications">
+  <div class="section-num">05</div>
+  <div class="fade-in">
+    <div class="section-tag">Academic Output</div>
+    <h2 class="section-title">Selected <em>Publications</em></h2>
+  </div>
+  <div class="pub-list fade-in">
+
+    <a class="glass pub-card" href="https://ieeexplore.ieee.org/abstract/document/8745693" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img src="images/Paper/P1.png" style="float:right;width:289px;border-radius:8px;margin:0 0 0.9rem 1.2rem;">
+      <div class="pub-title">Digital Metasurface Based on Graphene: An Application to Beam Steering in Terahertz Plasmonic Antennas <span onclick="event.preventDefault();event.stopPropagation();window.open('pdfs/P1.pdf','_blank');" style="color:#ff6b35;font-weight:700;cursor:pointer;margin-left:.35rem;font-size:0.7em;">(+PDF)</span></div>
+      <div class="pub-venue">IEEE Transactions on Nanotechnology &nbsp;·&nbsp; Vol. 18, pp. 734–746 &nbsp;·&nbsp; 2019</div>
+      <div class="pub-summary">A reconfigurable digital metasurface that leverages graphene's electrical tunability to perform beam steering at terahertz frequencies. The device is described as a matrix of discrete building blocks with switchable states, drawing parallels with information theory. Each unit cell is independently biased through gate voltages, enabling fast electronic reconfiguration without mechanical components. By dynamically adjusting a phase gradient along the metasurface plane, the device achieves beam steering in all practical directions. Beam widths and steering errors remain well below ten degrees and five percent in most cases, demonstrating the platform's strong promise for terahertz wireless communications and sensing systems.</div>
+    </a>
+
+    <a class="glass pub-card" href="https://www.sciencedirect.com/science/article/abs/pii/S0008622319303677" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img src="images/Paper/P2.jpg" style="float:right;width:284px;border-radius:8px;margin:0 0 0.9rem 1.2rem;">
+      <div class="pub-title">Multi-Bit Graphene-Based Bias-Encoded Metasurfaces for Real-Time Terahertz Wavefront Shaping: From Controllable Orbital Angular Momentum Generation Toward Arbitrary Beam Tailoring <span onclick="event.preventDefault();event.stopPropagation();window.open('pdfs/P2.pdf','_blank');" style="color:#ff6b35;font-weight:700;cursor:pointer;margin-left:.35rem;font-size:0.7em;">(+PDF)</span></div>
+      <div class="pub-venue">Elsevier Carbon &nbsp;·&nbsp; Vol. 149, pp. 125–138 &nbsp;·&nbsp; 2019</div>
+      <div class="pub-summary">A new generation of multi-bit graphene-based metasurfaces capable of real-time reflected wavefront manipulation at terahertz frequencies. Each meta-atom can be independently switched among eight digital states by electronically controlling the chemical potential of individual graphene patches through applied gate voltages. The multi-bit architecture significantly improves phase resolution over single-bit designs, reducing quantization lobes and enhancing beam quality. The device can generate vortex wavefronts carrying controllable orbital angular momentum, emit multiple arbitrarily oriented pencil beams simultaneously, and realize combinations of pencil and vortex beams — all within a single reprogrammable structure.</div>
+    </a>
+
+    <a class="glass pub-card" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.201700310" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img src="images/Paper/P3.png" style="float:right;width:265px;border-radius:8px;margin:0 0 0.9rem 1.2rem;">
+      <div class="pub-title">Real-Time and Broadband Terahertz Wave Scattering Manipulation via Polarization-Insensitive Conformal Graphene-Based Coding Metasurfaces <span onclick="event.preventDefault();event.stopPropagation();window.open('pdfs/P3.pdf','_blank');" style="color:#ff6b35;font-weight:700;cursor:pointer;margin-left:.35rem;font-size:0.7em;">(+PDF)</span></div>
+      <div class="pub-venue">Wiley Annalen der Physik &nbsp;·&nbsp; Vol. 530, Issue 4, Art. 1700310 &nbsp;·&nbsp; 2018</div>
+      <div class="pub-summary">A multifunctional graphene-based coding metasurface for real-time and broadband manipulation of terahertz wave scattering. Each graphene unit can be dynamically switched between two digital states by varying the chemical potential through an applied bias voltage, enabling a variety of scattering patterns with different numbers and orientations of reflection beams. The structure maintains low reflection over a broad frequency range and remains polarization-insensitive across a wide range of incident angles. Its conformal design preserves scattering manipulation capabilities even when wrapped around curved and non-planar surfaces, opening new routes for wearable devices, conformal antenna integration, imaging, and electromagnetic stealth applications.</div>
+    </a>
+
+    <a class="glass pub-card" href="https://pubs.aip.org/aip/apl/article/118/26/263506/1061212" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img src="images/Paper/P4.png" style="float:right;width:280px;border-radius:8px;margin:0 0 0.9rem 1.2rem;">
+      <div class="pub-title">Exceptional Degeneracies in Traveling Wave Tubes with Dispersive Slow-Wave Structure Including Space-Charge Effect <span onclick="event.preventDefault();event.stopPropagation();window.open('pdfs/P4.pdf','_blank');" style="color:#ff6b35;font-weight:700;cursor:pointer;margin-left:.35rem;font-size:0.7em;">(+PDF)</span></div>
+      <div class="pub-venue">AIP Applied Physics Letters &nbsp;·&nbsp; Vol. 118, Issue 26, Art. 263506 &nbsp;·&nbsp; 2021</div>
+      <div class="pub-summary">Studies exceptional points of degeneracy in traveling wave tubes with a helix waveguide slow-wave structure. An extended analytical model, generalizing the classical Pierce model, accounts for dispersive frequency-dependent phase velocity, characteristic impedance, and space-charge effects, and is validated against full-wave simulations. The model captures three-mode coupling between forward and backward beam modes and the circuit wave mode, revealing precise conditions for eigenvalue coalescence. Near an exceptional point of degeneracy, the system exhibits extraordinary sensitivity to changes in the electron beam velocity, with eigenvalues following a fractional power series expansion at the degeneracy point.</div>
+    </a>
+
+    <a class="glass pub-card" href="https://ieeexplore.ieee.org/abstract/document/10497170" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img src="images/Paper/P5.png" style="float:right;width:210px;border-radius:8px;margin:0 0 0.9rem 1.2rem;">
+      <div class="pub-title">Parametric Modeling of Serpentine Waveguide Traveling Wave Tubes <span onclick="event.preventDefault();event.stopPropagation();window.open('pdfs/P5.pdf','_blank');" style="color:#ff6b35;font-weight:700;cursor:pointer;margin-left:.35rem;font-size:0.7em;">(+PDF)</span></div>
+      <div class="pub-venue">IEEE Transactions on Plasma Science &nbsp;·&nbsp; Vol. 52, pp. 1247–1263 &nbsp;·&nbsp; 2024</div>
+      <div class="pub-summary">A fast analytical model for computing small-signal gain in serpentine waveguide traveling wave tubes, extending the classical Pierce model to account for dispersive phase velocity, characteristic impedance, and space-charge effects. The serpentine waveguide topology supports broadband beam-wave interaction and is particularly attractive for compact, high-power millimeter-wave amplifiers used in modern radar and satellite systems. The model introduces a correction factor for the non-uniform electric field distribution across the electron beam cross section, substantially improving accuracy over prior analytical treatments. Results are validated against computationally intensive particle-in-cell simulations, demonstrating robustness across wide variations in beam phase velocity, beam current, number of unit cells, and input power.</div>
+    </a>
+
+    <a class="glass pub-card" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.032214" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img src="images/Paper/P6.png" style="float:right;width:316px;border-radius:8px;margin:0 0 0.9rem 1.2rem;">
+      <div class="pub-title">Exceptional Point in a Degenerate System Made of a Gyrator and Two Unstable Resonators <span onclick="event.preventDefault();event.stopPropagation();window.open('pdfs/P6.pdf','_blank');" style="color:#ff6b35;font-weight:700;cursor:pointer;margin-left:.35rem;font-size:0.7em;">(+PDF)</span></div>
+      <div class="pub-venue">APS Physical Review A &nbsp;·&nbsp; Vol. 105, No. 3, Art. 032214 &nbsp;·&nbsp; 2022</div>
+      <div class="pub-summary">Demonstrates that a circuit comprising two unstable inductor-capacitor resonators coupled via a gyrator supports an exceptional point of degeneracy with a purely real eigenfrequency. The non-Hermitian character arises from the anti-reciprocal coupling of the gyrator, enabling eigenvalue and eigenvector coalescence without requiring gain or loss media. With external perturbations, the resonance frequency follows a square-root dependence on the perturbation magnitude, offering exceptional potential for high-sensitivity sensing. The effects of small losses are investigated analytically, showing that they break the EPD and lead to instability. The fractional power series expansion near the exceptional point confirms the bifurcation behavior and the orders-of-magnitude enhanced sensitivity of the system.</div>
+    </a>
+
+    <a class="glass pub-card" href="https://iopscience.iop.org/article/10.1088/1751-8121/ad8118" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-accent-bar"></div>
+      <img src="images/Paper/P7.png" style="float:right;width:220px;border-radius:8px;margin:0 0 0.9rem 1.2rem;">
+      <div class="pub-title">Simple Reciprocal Electric Circuit Exhibiting Exceptional Point of Degeneracy <span onclick="event.preventDefault();event.stopPropagation();window.open('pdfs/P7.pdf','_blank');" style="color:#ff6b35;font-weight:700;cursor:pointer;margin-left:.35rem;font-size:0.7em;">(+PDF)</span></div>
+      <div class="pub-venue">IOP Journal of Physics A: Mathematical and Theoretical &nbsp;·&nbsp; Vol. 57, No. 45, Art. 455206 &nbsp;·&nbsp; 2024</div>
+      <div class="pub-summary">Introduces a minimalist reciprocal electric circuit exhibiting an exceptional point of degeneracy, consisting of only four lumped elements — two inductor-capacitor loops sharing one capacitor. Unlike prior nonreciprocal circuits that require a gyrator element for eigenvalue coalescence, this circuit is fully reciprocal while achieving the same Jordan canonical form in its system matrix. The study examines how reciprocity and nonreciprocity manifest in spectral data, showing that asymmetry appears in the circuit Lagrangian and in symmetry breakdowns among eigenmodes rather than in the impedance matrix. All theoretical findings are validated through numerical simulations using commercial circuit simulator software, confirming the predicted EPD behavior.</div>
+    </a>
+
+  </div>
+  <div class="fade-in" style="margin-top: 2.5rem; text-align: center;">
+    <a class="btn btn-outline" href="https://scholar.google.com/citations?user=ReDDTRIAAAAJ&hl=en" target="_blank">
+      View All Publications on Google Scholar
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── REVIEWER EXPERIENCE ── -->
+<section id="reviewer">
+  <div class="section-num">06</div>
+  <div class="fade-in">
+    <div class="section-tag">Peer Review</div>
+    <h2 class="section-title">Reviewer <em>Experience</em></h2>
+  </div>
+  <div class="reviewer-grid fade-in">
+
+    <!-- IEEE -->
+    <div class="glass reviewer-card">
+      <div class="card-accent-bar"></div>
+      <a class="reviewer-publisher" href="https://www.ieee.org" target="_blank"><img class="reviewer-logo" src="images/Reviewer/IEEE.svg" alt="IEEE"> IEEE (Institute of Electrical and Electronics Engineers)</a>
+      <div class="reviewer-journals">
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8566058" target="_blank">Open Journal of Antennas and Propagation</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920" target="_blank">Transactions on Circuits and Systems II: Express Briefs</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4563994" target="_blank">Photonics Journal</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank">Internet of Things Journal</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=68" target="_blank">Photonics Technology Letters</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7727" target="_blank">Antennas and Wireless Propagation Letters</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=27" target="_blank">Transactions on Plasma Science</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7729" target="_blank">Transactions on Nanotechnology</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=50" target="_blank">Lightwave Technology</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2944" target="_blank">Journal of Selected Topics in Quantum Electronics</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8" target="_blank">Transactions on Antennas and Propagation</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=22" target="_blank">Transactions on Microwave Theory and Techniques</a> &nbsp;|&nbsp;
+        <a href="https://2024.apsursi.org" target="_blank">AP-S/URSI 2024</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=90" target="_blank">IEEE/ACM Transactions on Networking</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=16" target="_blank">Transactions on Electron Devices</a> &nbsp;|&nbsp;
+        <a href="https://2025.apsursi.org" target="_blank">AP-S/URSI 2025</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9882533" target="_blank">Transactions on Machine Learning in Communications and Networking</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=63" target="_blank">Transactions on Power Electronics</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=23" target="_blank">Transactions on Nuclear Science</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361" target="_blank">Sensors Journal</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5503871" target="_blank">Transactions on Terahertz Science and Technology</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=55" target="_blank">Electron Device Letters</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9944983" target="_blank">Microwave and Wireless Technology Letters</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=26" target="_blank">Transactions on Communications</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7693" target="_blank">Transactions on Wireless Communications</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639" target="_blank">IEEE Access</a> &nbsp;|&nbsp;
+        <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10918858" target="_blank">Journal of Selected Topics in Electromagnetics, Antennas and Propagation</a> &nbsp;|&nbsp;
+        <a href="https://2026.apsursi.org" target="_blank">AP-S/URSI 2026</a>
+      </div>
+    </div>
+
+    <!-- Wiley -->
+    <div class="glass reviewer-card">
+      <div class="card-accent-bar"></div>
+      <a class="reviewer-publisher" href="https://www.wiley.com" target="_blank"><img class="reviewer-logo" src="images/Reviewer/Wiley.svg" alt="Wiley"> Wiley-VCH (John Wiley &amp; Sons)</a>
+      <div class="reviewer-certs">
+        <span class="reviewer-cert">Certified Reviewer — IET Microwaves, Antennas &amp; Propagation</span>
+      </div>
+      <div class="reviewer-journals">
+        <a href="https://ietresearch.onlinelibrary.wiley.com/journal/17518733" target="_blank">IET Microwaves, Antennas &amp; Propagation</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/25130390" target="_blank">Advanced Theory and Simulations</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/21951071" target="_blank">Advanced Optical Materials</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/21983844" target="_blank">Advanced Science</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/16163028" target="_blank">Advanced Functional Materials</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/26884046" target="_blank">Small Science</a> &nbsp;|&nbsp;
+        <a href="https://advanced.onlinelibrary.wiley.com/journal/2365709X" target="_blank">Advanced Materials Technologies</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/18638899" target="_blank">Laser &amp; Photonics Reviews</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/1097007x" target="_blank">International Journal of Circuit Theory and Applications</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/10991131" target="_blank">International Journal of Communication Systems</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/25778196" target="_blank">Engineering Reports</a> &nbsp;|&nbsp;
+        <a href="https://ietresearch.onlinelibrary.wiley.com/journal/20513305" target="_blank">The Journal of Engineering</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/15214095" target="_blank">Advanced Materials</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/10991204" target="_blank">International Journal of Numerical Modelling: Electronic Networks, Devices and Fields</a> &nbsp;|&nbsp;
+        <a href="https://onlinelibrary.wiley.com/journal/10982760" target="_blank">Microwave and Optical Technology Letters</a>
+      </div>
+    </div>
+
+    <!-- Optica -->
+    <div class="glass reviewer-card">
+      <div class="card-accent-bar"></div>
+      <a class="reviewer-publisher" href="https://opg.optica.org" target="_blank"><img class="reviewer-logo" src="images/Reviewer/Optica.png" alt="Optica"> Optica (formerly Optical Society of America, OSA)</a>
+      <div class="reviewer-certs">
+        <span class="reviewer-cert">Certified Reviewer — Optica Publishing Group Reviewer Course</span>
+      </div>
+      <div class="reviewer-journals">
+        <a href="https://opg.optica.org/oe/home.cfm" target="_blank">Optics Express</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/ol/home.cfm" target="_blank">Optics Letters</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/optcon/home.cfm" target="_blank">Optics Continuum</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/ome/home.cfm" target="_blank">Optical Materials Express</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/josab/home.cfm" target="_blank">Optical Society of America B</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/prj/home.cfm" target="_blank">Photonics Research</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/optica/home.cfm" target="_blank">Optica</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/ao/home.cfm" target="_blank">Applied Optics</a> &nbsp;|&nbsp;
+        <a href="https://opg.optica.org/jlt/home.cfm" target="_blank">Lightwave Technology</a>
+      </div>
+    </div>
+
+    <!-- IOP Publishing + Elsevier (half width, same row) -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.8rem;">
+      <div class="glass reviewer-card">
+        <div class="card-accent-bar"></div>
+        <a class="reviewer-publisher" href="https://ioppublishing.org" target="_blank"><img class="reviewer-logo" src="images/Reviewer/IOP.jpg" alt="IOP Publishing"> IOP Publishing (Institute of Physics Publishing)</a>
+        <div class="reviewer-certs">
+          <span class="reviewer-cert">Certified Reviewer — IOP Peer Review Excellence Training Graduate</span>
+          <span class="reviewer-cert">Trusted Reviewer — Institute of Physics</span>
+        </div>
+        <div class="reviewer-journals">
+          <a href="https://iopscience.iop.org/journal/0022-3727" target="_blank">Journal of Physics D: Applied Physics</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/2040-8978" target="_blank">Journal of Optics</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/2515-7647" target="_blank">Journal of Physics: Photonics</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/2053-1591" target="_blank">Journal of Materials Research Express</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/0957-4484" target="_blank">Nanotechnology</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/0295-5075" target="_blank">EPL (Europhysics Letters)</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/1402-4896" target="_blank">Physica Scripta</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/1367-2630" target="_blank">New Journal of Physics</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/1347-4065" target="_blank">Japanese Journal of Applied Physics</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/2631-8695" target="_blank">Engineering Research Express</a> &nbsp;|&nbsp;
+          <a href="https://iopscience.iop.org/journal/0957-0233" target="_blank">Measurement Science and Technology</a>
+        </div>
+      </div>
+      <div class="glass reviewer-card">
+        <div class="card-accent-bar"></div>
+        <a class="reviewer-publisher" href="https://www.elsevier.com" target="_blank"><img class="reviewer-logo" src="images/Reviewer/Elsevier.svg" alt="Elsevier"> Elsevier</a>
+        <div class="reviewer-journals">
+          <a href="https://www.sciencedirect.com/journal/nano-communication-networks" target="_blank">Nano Communication Networks</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/photonics-and-nanostructures-fundamentals-and-applications" target="_blank">Photonics and Nanostructures — Fundamentals and Applications</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/infrared-physics-and-technology" target="_blank">Infrared Physics and Technology</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/materials-and-design" target="_blank">Materials &amp; Design</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/results-in-physics" target="_blank">Results in Physics</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/physical-communication" target="_blank">Physical Communication</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/optik" target="_blank">Optik</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/aeu-international-journal-of-electronics-and-communications" target="_blank">AEU — International Journal of Electronics and Communications</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/physics-letters-a" target="_blank">Physics Letters A</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/optics-communications" target="_blank">Optics Communications</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/optics-and-laser-technology" target="_blank">Optics &amp; Laser Technology</a> &nbsp;|&nbsp;
+          <a href="https://www.sciencedirect.com/journal/european-journal-of-mechanics-b-fluids" target="_blank">European Journal of Mechanics B/Fluids</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACS + Nature (half width, same row) -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.8rem;">
+      <div class="glass reviewer-card">
+        <div class="card-accent-bar"></div>
+        <a class="reviewer-publisher" href="https://www.acs.org" target="_blank"><img class="reviewer-logo" src="images/Reviewer/ACS.svg" alt="ACS"> ACS (American Chemical Society)</a>
+        <div class="reviewer-journals">
+          <a href="https://pubs.acs.org/journal/jpclcd" target="_blank">Physical Chemistry Letters</a> &nbsp;|&nbsp;
+          <a href="https://pubs.acs.org/journal/acsodf" target="_blank">Omega</a> &nbsp;|&nbsp;
+          <a href="https://pubs.acs.org/journal/aaembp" target="_blank">Applied Electronic Materials</a> &nbsp;|&nbsp;
+          <a href="https://pubs.acs.org/journal/aanmf6" target="_blank">Applied Nano Materials</a>
+        </div>
+      </div>
+      <div class="glass reviewer-card">
+        <div class="card-accent-bar"></div>
+        <a class="reviewer-publisher" href="https://www.nature.com" target="_blank"><img class="reviewer-logo" src="images/Reviewer/Nature.avif" alt="Nature"> Nature</a>
+        <div class="reviewer-journals">
+          <a href="https://www.nature.com/srep/" target="_blank">Scientific Reports</a> &nbsp;|&nbsp;
+          <a href="https://www.nature.com/ncomms/" target="_blank">Nature Communications</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Taylor & Francis + MDPI (half width, same row) -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.8rem;">
+      <div class="glass reviewer-card">
+        <div class="card-accent-bar"></div>
+        <a class="reviewer-publisher" href="https://www.taylorfrancis.com" target="_blank"><img class="reviewer-logo" src="images/Reviewer/TF.jpg" alt="Taylor & Francis"> Taylor &amp; Francis Group</a>
+        <div class="reviewer-journals">
+          <a href="https://www.tandfonline.com/journals/twrm20" target="_blank">Waves in Random and Complex Media</a> &nbsp;|&nbsp;
+          <a href="https://www.tandfonline.com/journals/tewa20" target="_blank">Electromagnetic Waves and Applications</a> &nbsp;|&nbsp;
+          <a href="https://www.tandfonline.com/journals/uemg20" target="_blank">Electromagnetics</a> &nbsp;|&nbsp;
+          <a href="https://www.tandfonline.com/journals/tmop20" target="_blank">Modern Optics</a> &nbsp;|&nbsp;
+          <a href="https://www.tandfonline.com/journals/tijr20" target="_blank">IETE Journal of Research</a>
+        </div>
+      </div>
+      <div class="glass reviewer-card">
+        <div class="card-accent-bar"></div>
+        <a class="reviewer-publisher" href="https://www.mdpi.com" target="_blank"><img class="reviewer-logo" src="images/Reviewer/MDPI.png" alt="MDPI"> MDPI (Multidisciplinary Digital Publishing Institute)</a>
+        <div class="reviewer-journals">
+          <a href="https://www.mdpi.com/journal/nanomaterials" target="_blank">Nanomaterials</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/molecules" target="_blank">Molecules</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/processes" target="_blank">Processes</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/chemosensors" target="_blank">Chemosensors</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/sustainability" target="_blank">Sustainability</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/photonics" target="_blank">Photonics</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/sensors" target="_blank">Sensors</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/energies" target="_blank">Energies</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/crystals" target="_blank">Crystals</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/electronics" target="_blank">Electronics</a> &nbsp;|&nbsp;
+          <a href="https://www.mdpi.com/journal/micromachines" target="_blank">Micromachines</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Others -->
+    <div class="glass reviewer-card">
+      <div class="card-accent-bar"></div>
+      <div class="reviewer-publisher">Other Journals</div>
+      <div class="reviewer-journals">
+        <a href="https://pubs.aip.org/aip/jap" target="_blank">Journal of Applied Physics (American Institute of Physics)</a> &nbsp;|&nbsp;
+        <a href="https://pubs.aip.org/aip/apl" target="_blank">Applied Physics Letters (American Institute of Physics)</a> &nbsp;|&nbsp;
+        <a href="https://www.spiedigitallibrary.org/journals/advanced-photonics" target="_blank">Advanced Photonics (SPIE)</a> &nbsp;|&nbsp;
+        <a href="https://www.spiedigitallibrary.org/journals/advanced-photonics-nexus" target="_blank">Advanced Photonics Nexus (SPIE)</a> &nbsp;|&nbsp;
+        <a href="https://www.advancedemag.com/" target="_blank">Advanced Electromagnetics</a> &nbsp;|&nbsp;
+        <a href="https://www.emscience.org" target="_blank">Electromagnetic Science</a> &nbsp;|&nbsp;
+        <a href="https://www.light-am.com/" target="_blank">Light: Advanced Manufacturing (Light Publishing Group)</a> &nbsp;|&nbsp;
+        <a href="https://www.frontiersin.org/journals/antennas-and-propagation" target="_blank">Frontiers in Antennas and Propagation (Frontiers)</a> &nbsp;|&nbsp;
+        <a href="https://journals.aps.org/prapplied/" target="_blank">Physical Review Applied (APS)</a> &nbsp;|&nbsp;
+        <a href="https://journals.sagepub.com/home/jvc" target="_blank">Journal of Vibration and Control (SAGE)</a> &nbsp;|&nbsp;
+        <a href="https://pubs.rsc.org/en/journals/journalissues/nr#!recentarticles&adv" target="_blank">Nanoscale (RSC)</a> &nbsp;|&nbsp;
+        <a href="https://www.degruyter.com/journal/key/nanoph/html" target="_blank">Nanophotonics (De Gruyter Brill)</a> &nbsp;|&nbsp;
+        <a href="https://www.degruyter.com/journal/key/freq/html" target="_blank">Frequenz (De Gruyter Brill)</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PAGES ── -->
+<section id="pages">
+  <div class="section-num">07</div>
+  <div class="fade-in">
+    <div class="section-tag">Academic Profiles</div>
+    <h2 class="section-title">My <em>Pages</em></h2>
+  </div>
+  <div class="fade-in" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:1.5rem;">
+
+    <a class="glass social-platform-card" href="https://scholar.google.com/citations?user=ReDDTRIAAAAJ&hl=en" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/google-scholar.svg" alt="Google Scholar">
+        <div class="spc-body">
+          <div class="spc-name">Google Scholar</div>
+          <div class="spc-handle">Publications</div>
+        </div>
+      </div>
+      <div class="spc-desc">Citation count, h-index, i10-index &amp; full peer-reviewed publication list</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://www.researchgate.net/profile/Kasra-Rouhi" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/researchgate.svg" alt="ResearchGate">
+        <div class="spc-body">
+          <div class="spc-name">ResearchGate</div>
+          <div class="spc-handle">Research network</div>
+        </div>
+      </div>
+      <div class="spc-desc">Publication list, citation metrics, &amp; global research collaboration network</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://www.linkedin.com/in/kasra-rouhi-8a954311a/" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/linkedin.png" alt="LinkedIn">
+        <div class="spc-body">
+          <div class="spc-name">LinkedIn</div>
+          <div class="spc-handle">Professional Network</div>
+        </div>
+      </div>
+      <div class="spc-desc">Career history, professional skills &amp; industry network</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://orcid.org/0000-0002-1226-0104" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/orcid.svg" alt="ORCID">
+        <div class="spc-body">
+          <div class="spc-name">ORCID</div>
+          <div class="spc-handle">0000-0002-1226-0104</div>
+        </div>
+      </div>
+      <div class="spc-desc">Persistent researcher identifier linking all publications &amp; experiences</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://ieeexplore.ieee.org/author/37089044678" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/ieee.svg" alt="IEEE">
+        <div class="spc-body">
+          <div class="spc-name">IEEE</div>
+          <div class="spc-handle">Member (R6)</div>
+        </div>
+      </div>
+      <div class="spc-desc">IEEE Xplore author page with published journal articles &amp; conference proceedings</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://www.scienceopen.com/search#author/e1d26bbb-9e7f-41dd-b4eb-7d5ece49ce6f" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/scienceopen.png" alt="ScienceOpen">
+        <div class="spc-body">
+          <div class="spc-name">ScienceOpen</div>
+          <div class="spc-handle">Author profile</div>
+        </div>
+      </div>
+      <div class="spc-desc">Open-access discovery platform with indexed publications &amp; peer review activity</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://www.webofscience.com/wos/author/record/ABC-2812-2021" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/webofscience.png" alt="Web of Science">
+        <div class="spc-body">
+          <div class="spc-name">Web of Science</div>
+          <div class="spc-handle">ABC-2812-2021</div>
+        </div>
+      </div>
+      <div class="spc-desc">Clarivate-verified citation index, research impact metrics &amp; co-author network</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://sciprofiles.com/profile/kasrarouhi" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/sciprofiles.svg" alt="SciProfiles">
+        <div class="spc-body">
+          <div class="spc-name">SciProfiles</div>
+          <div class="spc-handle">MDPI</div>
+        </div>
+      </div>
+      <div class="spc-desc">MDPI-hosted researcher profile with publications &amp; journal review activity</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://arxiv.org/search/physics?query=kasra+rouhi&searchtype=author&abstracts=show&order=-announced_date_first&size=50" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/arxiv.svg" alt="arXiv">
+        <div class="spc-body">
+          <div class="spc-name">arXiv</div>
+          <div class="spc-handle">Preprint</div>
+        </div>
+      </div>
+      <div class="spc-desc">Early-access preprints &amp; open-access manuscripts in physics, photonics &amp; engineering</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://www.scopus.com/authid/detail.uri?authorId=57194711979" target="_blank">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <img class="spc-icon-img" src="images/Pages/scopus.jpg" alt="Scopus">
+        <div class="spc-body">
+          <div class="spc-name">Scopus</div>
+          <div class="spc-handle">57194711979</div>
+        </div>
+      </div>
+      <div class="spc-desc">Elsevier's abstract &amp; citation database with h-index, document count &amp; co-author map</div>
+    </a>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── SOCIAL MEDIA ── -->
+<section id="social">
+  <div class="section-num">08</div>
+  <div class="fade-in">
+    <div class="section-tag">On the Internet</div>
+    <h2 class="section-title">Social <em>Media</em></h2>
+  </div>
+  <div class="fade-in" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:1.5rem;">
+
+    <a class="glass social-platform-card" href="https://x.com/kasrarouhi" target="_blank" title="X (Twitter) — @kasrarouhi">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <div class="spc-icon" style="background:linear-gradient(135deg,#000,#1a1a1a);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+        <div class="spc-body">
+          <div class="spc-name">X (Twitter)</div>
+          <div class="spc-handle">@kasrarouhi</div>
+        </div>
+      </div>
+      <div class="spc-desc">Main profile, Science, Research, Electromagnetics &amp; Engineering thoughts</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://x.com/KasraStargazer" target="_blank" title="X (Twitter) — @KasraStargazer">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <div class="spc-icon" style="background:linear-gradient(135deg,#0d1b2a,#1a3a5c);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="#1d9bf0"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+        <div class="spc-body">
+          <div class="spc-name">X (Twitter)</div>
+          <div class="spc-handle">@KasraStargazer</div>
+        </div>
+      </div>
+      <div class="spc-desc">Astronomy, Stargazing &amp; the wonders of the cosmos</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://x.com/KasraMicroverse" target="_blank" title="X (Twitter) — @KasraMicroverse">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <div class="spc-icon" style="background:linear-gradient(135deg,#1a0a2e,#5c1a7a);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+        <div class="spc-body">
+          <div class="spc-name">X (Twitter)</div>
+          <div class="spc-handle">@KasraMicroverse</div>
+        </div>
+      </div>
+      <div class="spc-desc">Nanoscale physics, Microscale phenomena &amp; the microverse</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://bsky.app/profile/kasrarouhi.bsky.social" target="_blank" title="Bluesky — @kasrarouhi.bsky.social">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <div class="spc-icon" style="background:linear-gradient(135deg,#0085ff,#00aaff);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+        </div>
+        <div class="spc-body">
+          <div class="spc-name">Bluesky</div>
+          <div class="spc-handle">@kasrarouhi.bsky.social</div>
+        </div>
+      </div>
+      <div class="spc-desc">Science, AI &amp; Tech on the open web</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://mastodon.social/@kasrarouhi" target="_blank" title="Mastodon — @kasrarouhi@mastodon.social">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <div class="spc-icon" style="background:linear-gradient(135deg,#563acc,#6364ff);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M21.327 8.566c0-4.339-2.843-5.61-2.843-5.61-1.433-.658-3.894-.935-6.451-.956h-.063c-2.557.021-5.016.298-6.45.956 0 0-2.843 1.272-2.843 5.61 0 .993-.019 2.181.012 3.441.103 4.243.778 8.425 4.701 9.463 1.809.479 3.362.579 4.612.51 2.268-.126 3.541-.809 3.541-.809l-.075-1.646s-1.621.511-3.441.449c-1.804-.062-3.707-.194-3.999-2.409a4.523 4.523 0 0 1-.04-.621s1.77.433 4.014.536c1.372.063 2.658-.08 3.965-.236 2.506-.299 4.688-1.843 4.962-3.254.434-2.223.398-5.424.398-5.424zm-3.353 5.59h-2.081V9.057c0-1.075-.452-1.62-1.357-1.62-1 0-1.501.647-1.501 1.927v2.791h-2.069V9.364c0-1.28-.501-1.927-1.502-1.927-.905 0-1.357.545-1.357 1.62v5.099H6.026V8.903c0-1.074.273-1.927.823-2.558.566-.631 1.307-.955 2.228-.955 1.065 0 1.872.409 2.405 1.228l.518.869.519-.869c.533-.819 1.34-1.228 2.405-1.228.92 0 1.662.324 2.228.955.549.631.822 1.484.822 2.558v5.253z"/></svg>
+        </div>
+        <div class="spc-body">
+          <div class="spc-name">Mastodon</div>
+          <div class="spc-handle">@kasrarouhi@mastodon.social</div>
+        </div>
+      </div>
+      <div class="spc-desc">Recent research papers review</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://www.instagram.com/kasra.rouhi/" target="_blank" title="Instagram — @kasra.rouhi">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <div class="spc-icon" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </div>
+        <div class="spc-body">
+          <div class="spc-name">Instagram</div>
+          <div class="spc-handle">@kasra.rouhi</div>
+        </div>
+      </div>
+      <div class="spc-desc">Personal photos, Life moments &amp; visual stories</div>
+    </a>
+
+    <a class="glass social-platform-card" href="https://www.facebook.com/kasra.rouhi1" target="_blank" title="Facebook — kasra.rouhi1">
+      <div class="card-accent-bar"></div>
+      <div class="spc-top">
+        <div class="spc-icon" style="background:linear-gradient(135deg,#1877f2,#0b5fcc);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="spc-body">
+          <div class="spc-name">Facebook</div>
+          <div class="spc-handle">kasra.rouhi1</div>
+        </div>
+      </div>
+      <div class="spc-desc">Personal profile &amp; social connections</div>
+    </a>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-num">09</div>
+  <div class="fade-in">
+    <div class="section-tag">Get in touch</div>
+    <h2 class="section-title" style="margin-bottom: 1.4rem;">Let's <em>Connect</em></h2>
+    <p style="color: var(--muted); max-width: 640px; margin-bottom: 1.1rem;">
+      Whether you are interested in collaborating on research, discussing new ideas,
+      or exploring industry opportunities, I would love to hear from you. Science and
+      engineering thrive on exchange. I genuinely enjoy connecting with curious minds
+      from academia, industry, and beyond.
+    </p>
+    <p style="color: var(--muted); max-width: 640px;">
+      I am always open to meaningful conversations, joint projects, and new connections.
+      Do not hesitate to reach out. I will do my best to respond promptly.
+    </p>
+    <div class="contact-emails">
+      <a class="contact-email-link" href="mailto:kasrarouhi@gmail.com">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        kasrarouhi@gmail.com
+      </a>
+      <a class="contact-email-link" href="mailto:kasra.rouhi@uci.edu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        kasra.rouhi@uci.edu
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed &amp; crafted for <span>Kasra Rouhi</span></p>
+</footer>
+
+<script src="js/particles.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
