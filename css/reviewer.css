@@ -1,0 +1,38 @@
+/* ── Reviewer ── */
+.reviewer-grid { display: grid; grid-template-columns: 1fr; gap: 1.8rem; align-items: start; }
+.reviewer-card { padding: 1.7rem 1.87rem; }
+.reviewer-publisher {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem; font-weight: 700;
+  color: var(--accent);
+  margin-bottom: .85rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: .85rem;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+a.reviewer-publisher:hover { opacity: .75; }
+.reviewer-logo {
+  height: 32px; width: auto; max-width: 110px;
+  object-fit: contain; flex-shrink: 0;
+  background: #fff; border-radius: 8px; padding: 3px 7px;
+}
+.reviewer-certs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .85rem; }
+.reviewer-cert {
+  font-size: .7rem; font-weight: 700; color: var(--gold);
+  background: rgba(255,215,0,.08);
+  border: 1px solid rgba(255,215,0,.26);
+  border-radius: 20px; padding: .22rem .85rem;
+}
+.reviewer-journals { font-size: .82rem; color: var(--text); line-height: 1.95; text-align: justify; }
+.reviewer-journals a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: color .2s, border-color .2s;
+}
+.reviewer-journals a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}

@@ -1,0 +1,38 @@
+/* ── Experience ── */
+.exp-grid { display: grid; gap: 1.8rem; }
+.exp-card {
+  padding: 1.7rem 1.87rem;
+  display: flex; gap: 1.8rem; align-items: flex-start;
+}
+.exp-logo {
+  width: 76px; height: 76px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(0,240,255,.12), rgba(191,0,255,.12));
+  border: 1px solid rgba(0,240,255,.16);
+}
+.exp-logo img {
+  transition: transform .3s, filter .3s;
+}
+.exp-logo img:hover {
+  transform: scale(1.1) rotate(-3deg);
+  filter: drop-shadow(0 10px 28px rgba(0,0,0,.65));
+}
+.exp-body { flex: 1; }
+.exp-role { font-family: 'Space Grotesk', sans-serif; font-size: 1.485rem; font-weight: 600; }
+.exp-company { color: var(--accent); font-size: .9rem; font-weight: 500; margin-top: .18rem; }
+.exp-period { font-size: .78rem; color: var(--muted); margin-top: .2rem; }
+.exp-desc { font-size: .88rem; color: var(--muted); margin-top: .8rem; }
+
+/* ── Publications ── */
+.pub-list { display: grid; gap: 1.5rem; }
+.pub-card {
+  padding: 1.62rem 1.79rem;
+  border-left: 3px solid transparent;
+  transition: border-color .3s, box-shadow .35s;
+}
+.pub-card:hover { border-left-color: var(--accent); }
+.pub-title { font-weight: 600; font-size: 1rem; margin-bottom: .5rem; line-height: 1.55; }
+.pub-venue { font-size: .82rem; color: var(--accent); font-weight: 500; }
+.pub-summary { font-size: .82rem; color: var(--muted); margin-top: .7rem; line-height: 1.72; text-align: justify; }

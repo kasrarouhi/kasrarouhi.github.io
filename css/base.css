@@ -1,0 +1,83 @@
+/* ── Reset & CSS Variables ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #03060f;
+  --bg2:      #060c1e;
+  --surface:  rgba(255,255,255,0.042);
+  --surface2: rgba(255,255,255,0.07);
+  --border:   rgba(255,255,255,0.09);
+  --accent:   #00f0ff;
+  --accent2:  #bf00ff;
+  --accent3:  #ff6b35;
+  --gold:     #ffd700;
+  --text:     #eef0f8;
+  --muted:    #7a8599;
+  --radius:   20px;
+  --radius-sm: 12px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.75;
+}
+
+p { text-align: justify; }
+
+/* ── Scroll progress bar ── */
+#scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2), var(--gold));
+  z-index: 9999;
+  pointer-events: none;
+  transition: width .08s linear;
+}
+
+/* ── Canvas ── */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Aurora orbs ── */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: 0;
+  animation: orbFloat 22s ease-in-out infinite;
+}
+.orb-1 {
+  width: 720px; height: 720px;
+  background: radial-gradient(circle, rgba(0,240,255,.09), transparent 70%);
+  top: -200px; left: -200px;
+  animation-delay: 0s;
+}
+.orb-2 {
+  width: 840px; height: 840px;
+  background: radial-gradient(circle, rgba(191,0,255,.07), transparent 70%);
+  bottom: 0; right: -300px;
+  animation-delay: -8s;
+}
+.orb-3 {
+  width: 520px; height: 520px;
+  background: radial-gradient(circle, rgba(255,107,53,.05), transparent 70%);
+  top: 45%; left: 35%;
+  animation-delay: -15s;
+}
+@keyframes orbFloat {
+  0%,100% { transform: translate(0,0); }
+  33%  { transform: translate(50px,-35px); }
+  66%  { transform: translate(-25px, 45px); }
+}
