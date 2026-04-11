@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://kasrarouhi.me/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background: #080e1a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(0, 100, 255, 0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(120, 0, 255, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 50% 50%, rgba(0, 200, 255, 0.08) 0%, transparent 70%);
+      z-index: 0;
+      animation: bgShift 12s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgShift {
+      0%   { opacity: 1; transform: scale(1); }
+      100% { opacity: 0.85; transform: scale(1.05); }
+    }
+
+    /* Floating orbs */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.25;
+      z-index: 0;
+      animation: float linear infinite;
+    }
+    .orb1 { width: 400px; height: 400px; background: #0072ff; top: -100px; left: -100px; animation-duration: 20s; }
+    .orb2 { width: 300px; height: 300px; background: #7b2fff; bottom: -80px; right: -80px; animation-duration: 25s; animation-direction: reverse; }
+    .orb3 { width: 200px; height: 200px; background: #00c6ff; top: 50%; left: 60%; animation-duration: 18s; }
+
+    @keyframes float {
+      0%   { transform: translate(0, 0) rotate(0deg); }
+      33%  { transform: translate(40px, -30px) rotate(120deg); }
+      66%  { transform: translate(-20px, 20px) rotate(240deg); }
+      100% { transform: translate(0, 0) rotate(360deg); }
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      padding: 68px 20px 61px;
+      background:
+        linear-gradient(to bottom, rgba(8,14,26,0.45) 0%, rgba(8,14,26,0.75) 100%),
+        url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1920&q=85') center center / cover no-repeat;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(0,198,255,0.15), rgba(0,114,255,0.15));
+      border: 1px solid rgba(0,198,255,0.3);
+      border-radius: 999px;
+      padding: 5px 18px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00c6ff;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(100deg, #00c6ff 0%, #a78bfa 50%, #0072ff 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 4s linear infinite;
+    }
+
+    @keyframes gradientShift {
+      0%   { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .subtitle {
+      color: rgba(255,255,255,0.45);
+      font-size: 1rem;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 24px;
+      padding: 48px 40px;
+    }
+
+    .card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      padding: 30px 20px 23px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      transition: transform 0.35s cubic-bezier(.22,.68,0,1.2), box-shadow 0.35s ease, border-color 0.35s ease;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    /* Staggered entrance */
+    .card:nth-child(1)  { animation-delay: 0.05s; }
+    .card:nth-child(2)  { animation-delay: 0.10s; }
+    .card:nth-child(3)  { animation-delay: 0.15s; }
+    .card:nth-child(4)  { animation-delay: 0.20s; }
+    .card:nth-child(5)  { animation-delay: 0.25s; }
+    .card:nth-child(6)  { animation-delay: 0.30s; }
+    .card:nth-child(7)  { animation-delay: 0.35s; }
+    .card:nth-child(8)  { animation-delay: 0.40s; }
+    .card:nth-child(9)  { animation-delay: 0.45s; }
+    .card:nth-child(10) { animation-delay: 0.50s; }
+    .card:nth-child(11) { animation-delay: 0.55s; }
+    .card:nth-child(12) { animation-delay: 0.60s; }
+    .card:nth-child(13) { animation-delay: 0.65s; }
+    .card:nth-child(14) { animation-delay: 0.70s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Shimmer sweep on hover */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.07) 50%, transparent 100%);
+      transition: left 0.5s ease;
+      pointer-events: none;
+    }
+
+    .card:hover::before {
+      left: 160%;
+    }
+
+    /* Gradient border glow on hover */
+    .card::after {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #00c6ff, #7b2fff, #0072ff);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .card:hover::after {
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-12px) scale(1.04);
+      box-shadow: 0 24px 50px rgba(0, 114, 255, 0.3), 0 0 0 1px rgba(0,198,255,0.2);
+      border-color: transparent;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card a img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+      border: 2px solid rgba(0, 198, 255, 0.5);
+      box-shadow: 0 0 0 4px rgba(0, 198, 255, 0.08), 0 0 20px rgba(0, 198, 255, 0.35);
+      object-fit: cover;
+      transition: box-shadow 0.35s ease, transform 0.35s ease;
+    }
+
+    .card:hover a img {
+      box-shadow: 0 0 0 5px rgba(0,198,255,0.2), 0 0 35px rgba(0,198,255,0.6);
+      transform: scale(1.1);
+    }
+
+    .card a img.gptzero-logo {
+      border-radius: 14px;
+      background: white;
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      padding: 4px;
+    }
+
+    .card a span {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+
+    .card:hover a span {
+      color: #00c6ff;
+    }
+
+    @media (max-width: 1200px) {
+      .grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: repeat(2, 1fr); padding: 24px; }
+      h1 { font-size: 2rem; }
+    }
+    @media (max-width: 380px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<style type="text/css" id="operaUserStyle">
+  video {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQ0IGlWaXNpYmxlUmVjdDsKdW5pZm9ybSBmbG9hdCBpQXJnc1sxXTsKCmNvbnN0IGZsb2F0IEVQU0lPTiA9IDAuMTsKY29uc3QgZmxvYXQgVl9NSU4gPSAwOwpjb25zdCBmbG9hdCBWX0xPVyA9IDAuMjU7CmNvbnN0IGZsb2F0IFZfTUVEID0gMC41Owpjb25zdCBmbG9hdCBWX0hJR0ggPSAwLjc1Owpjb25zdCBmbG9hdCBWX01BWCA9IDE7Cgpjb25zdCBmbG9hdCBUSFJFU0hPTERfQVJFQSA9IDgwMCAqIDYwMDsKY29uc3QgZmxvYXQgTUlOX0FSRUEgPSA0MDAgKiAxMDA7CmNvbnN0IGZsb2F0IE1JTl9TVFJJUCA9IDIwOwpjb25zdCBmbG9hdCBNQVJHSU4gPSAxOwoKaW5saW5lIGZsb2F0MyBwaXhlbChmbG9hdDIgeHksIGZsb2F0MiBvZmZzZXQpIHsKICAgIHJldHVybiBpQ2h1bmsuZXZhbCh4eSArIG9mZnNldCkucmdiOwp9CgppbmxpbmUgZmxvYXQzIHNoYXJwZW4oZmxvYXQyIHh5KSB7CiAgICBmbG9hdDMgZiA9CiAgICAgICAgcGl4ZWwoeHksIGZsb2F0MigtMSwgLTEpKSAqICAxICsKICAgICAgICBwaXhlbCh4eSwgZmxvYXQyKCAwLCAtMSkpICogLTEgKwogICAgICAgIHBpeGVsKHh5LCBmbG9hdDIoIDEsIC0xKSkgKiAgMSArCgogICAgICAgIHBpeGVsKHh5LCBmbG9hdDIoLTEsIDApKSAqIC0xICArCiAgICAgICAgcGl4ZWwoeHksIGZsb2F0MiggMCwgMCkpICogLTEgICsKICAgICAgICBwaXhlbCh4eSwgZmxvYXQyKCAxLCAwKSkgKiAtMSAgKwoKICAgICAgICBwaXhlbCh4eSwgZmxvYXQyKC0xLCAxKSkgKiAxICAgKwogICAgICAgIHBpeGVsKHh5LCBmbG9hdDIoIDAsIDEpKSAqIC0xICArCiAgICAgICAgcGl4ZWwoeHksIGZsb2F0MiggMSwgMSkpICogMTsKICAgIHJldHVybiBmIC8gLTE7Cn0KCmZsb2F0NCBSR1gyKGZsb2F0MiB4eSkgewogICAgZmxvYXQyIGNodW5rX3NpemUgPSBpVmlzaWJsZVJlY3Quenc7CiAgICBmbG9hdDQgY29sb3IgPSBpQ2h1bmsuZXZhbCh4eSk7CgogICAgaWYgKGNodW5rX3NpemUueCAqIGNodW5rX3NpemUueSA8IE1JTl9BUkVBKSB7CiAgICAgICAgcmV0dXJuIGNvbG9yOwogICAgfQoKICAgIGlmIChjaHVua19zaXplLnkgPCBNSU5fU1RSSVAgfHwgY2h1bmtfc2l6ZS54IDwgTUlOX1NUUklQKSB7CiAgICAgICAgcmV0dXJuIGNvbG9yOwogICAgfQoKICAgIGlmICh4eS54IDwgTUFSR0lOIHx8IHh5LnggPiAoY2h1bmtfc2l6ZS54IC0gTUFSR0lOKSB8fAogICAgICAgIHh5LnkgPCBNQVJHSU4gfHwgeHkueSA+IChjaHVua19zaXplLnkgLSBNQVJHSU4pKSB7CiAgICAgICAgcmV0dXJuIGNvbG9yOwogICAgfQoKICAgIHJldHVybiBmbG9hdDQoc2hhcnBlbih4eSksIDEpOwp9CgppbmxpbmUgZmxvYXQzIG1pbjN2KGZsb2F0MyB4LCBmbG9hdDMgeSwgZmxvYXQzIHopIHsKCXJldHVybiBtaW4oeCwgbWluKHksIHopKTsKfQoKaW5saW5lIGZsb2F0MyBtYXgzdihmbG9hdDMgeCwgZmxvYXQzIHksIGZsb2F0MyB6KSB7CglyZXR1cm4gbWF4KHgsIG1heCh5LCB6KSk7Cn0KCmZsb2F0MyBSR1gzKGZsb2F0MiB4eSwgZmxvYXQgc3RyZW5ndGgpIHsKICAgIGZsb2F0MyBhID0gcGl4ZWwoeHksIGZsb2F0MigtMSwgLTEpKTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoeHksIGZsb2F0MiggMCwgLTEpKTsKICAgIGZsb2F0MyBjID0gcGl4ZWwoeHksIGZsb2F0MiggMSwgLTEpKTsKCiAgICBmbG9hdDMgZCA9IHBpeGVsKHh5LCBmbG9hdDIoLTEsIDApKTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoeHksIGZsb2F0MiggMCwgMCkpOwogICAgZmxvYXQzIGYgPSBwaXhlbCh4eSwgZmxvYXQyKCAxLCAwKSk7CgogICAgZmxvYXQzIGcgPSBwaXhlbCh4eSwgZmxvYXQyKC0xLCAxKSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKHh5LCBmbG9hdDIoIDAsIDEpKTsKICAgIGZsb2F0MyBpID0gcGl4ZWwoeHksIGZsb2F0MiggMSwgMSkpOwoKICAgIGZsb2F0MyBtaW5fZGVmID0gbWluM3YoZCwgZSwgZik7CiAgICBmbG9hdDMgbWluX2JkZWZoID0gbWluM3YoYiwgbWluX2RlZiwgaCk7CiAgICBmbG9hdDMgbWluX2FiY2RmZ2hpID0gbWluM3YobWluM3YoYSwgbWluX2JkZWZoLCBjKSwgZywgaSk7CiAgICBmbG9hdDMgbWluM19mYWN0b3IgPSBtaW5fYmRlZmggKyBtaW5fYWJjZGZnaGk7CgogICAgZmxvYXQzIG1heF9kZWYgPSBtYXgzdihkLCBlLCBmKTsKICAgIGZsb2F0MyBtYXhfYmRlZmggPSBtYXgzdihiLCBtYXhfZGVmLCBoKTsKICAgIGZsb2F0MyBtYXhfYWJjZGZnaGkgPSBtYXgzdihtYXgzdihhLCBtaW5fYmRlZmgsIGMpLCBnLCBpKTsKICAgIGZsb2F0MyBtYXgzX2ZhY3RvciA9IG1heF9iZGVmaCArIG1heF9hYmNkZmdoaTsKCiAgICBmbG9hdDMgZmFjdG9yID0gMS4wIC8gbWF4M19mYWN0b3I7CgogICAgZmxvYXQzIGFtcCA9IHNhdHVyYXRlKG1pbihtaW4zX2ZhY3RvciwgMiAtIG1heDNfZmFjdG9yKSAqIGZhY3Rvcik7CiAgICBmbG9hdDMgYW1wX3NxcnQgPSBzcXJ0KGFtcCk7CgogICAgZmxvYXQgcGVhayA9IC0xLjAgLyAobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQzIGNyb3NzX3dlaWdodHMgPSBhbXBfc3FydCAqIHBlYWs7CiAgICBmbG9hdDMgd2VpZ2h0cyA9IDEgLyAoMSArIDQgKiBjcm9zc193ZWlnaHRzKTsKCiAgICBmbG9hdDMgcmVzdWx0ID0gKChiICsgZCArIGYgKyBoKSAqIGNyb3NzX3dlaWdodHMgKyBlKSAqIHdlaWdodHM7CgogICAgcmV0dXJuIHNhdHVyYXRlKHJlc3VsdCk7Cn0KCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(1.00 calc(env(-opera-accent-color-r, 255)/255) calc(env(-opera-accent-color-g, 255)/255) calc(env(-opera-accent-color-b, 255)/255)));
+  }
+</style></head>
+<body>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <header>
+    <h1>AI Tools Hub</h1>
+  </header>
+  <div class="grid">
+    <div class="card"><a href="https://claude.ai/new" target="_blank"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=128" alt="Claude Logo"><span>Claude</span></a></div>
+    <div class="card"><a href="https://gemini.google.com/app" target="_blank"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128" alt="Gemini Logo"><span>Gemini</span></a></div>
+    <div class="card"><a href="https://grok.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=grok.com&sz=128" alt="Grok Logo"><span>Grok</span></a></div>
+    <div class="card"><a href="https://chatgpt.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128" alt="ChatGPT Logo"><span>ChatGPT</span></a></div>
+    <div class="card"><a href="https://chat.deepseek.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=128" alt="DeepSeek Logo"><span>DeepSeek</span></a></div>
+    <div class="card"><a href="https://www.perplexity.ai/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128" alt="Perplexity Logo"><span>Perplexity</span></a></div>
+    <!-- New Qwen Card -->
+    <div class="card"><a href="https://chat.qwen.ai/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=chat.qwen.ai&sz=128" alt="Qwen Logo"><span>Qwen</span></a></div>
+    <div class="card"><a href="https://consensus.app/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=consensus.app&sz=128" alt="Consensus Logo"><span>Consensus</span></a></div>
+    <div class="card"><a href="https://www.meta.ai/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=meta.ai&sz=128" alt="Meta AI Logo"><span>Meta AI</span></a></div>
+    <div class="card"><a href="https://app.chathub.gg/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=chathub.gg&sz=128" alt="ChatHub Logo"><span>ChatHub</span></a></div>
+    <div class="card"><a href="https://manus.im/app" target="_blank"><img src="https://www.google.com/s2/favicons?domain=manus.im&sz=128" alt="Manus Logo"><span>Manus</span></a></div>
+    <div class="card"><a href="https://copilot.microsoft.com/chats/AiqZ1ySRgDxRhWBVHJ63v" target="_blank"><img src="https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128" alt="Copilot Logo"><span>Copilot</span></a></div>
+    <div class="card"><a href="https://www.kimi.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=kimi.com&sz=128" alt="Kimi Logo"><span>Kimi</span></a></div>
+    <div class="card"><a href="https://app.gptzero.me/" target="_blank"><img class="gptzero-logo" src="https://www.google.com/s2/favicons?domain=gptzero.me&sz=128" alt="GPTZero Logo"><span>GPTZero</span></a></div>
+  </div>
+
+
+</body></html>
