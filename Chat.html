@@ -110,7 +110,7 @@
       z-index: 1;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 24px;
+      gap: 10px;
       padding: 48px 40px;
     }
 
@@ -244,6 +244,122 @@
     @media (max-width: 380px) {
       .grid { grid-template-columns: 1fr; }
     }
+
+    /* ── Light card row ── */
+    .grid-light {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      padding: 0 40px 48px;
+    }
+
+    .card-light {
+      position: relative;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 24px;
+      padding: 30px 20px 23px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      transition: transform 0.35s cubic-bezier(.22,.68,0,1.2), box-shadow 0.35s ease, border-color 0.35s ease;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .card-light:nth-child(1) { animation-delay: 0.05s; }
+    .card-light:nth-child(2) { animation-delay: 0.10s; }
+    .card-light:nth-child(3) { animation-delay: 0.15s; }
+
+    .card-light::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent 0%, rgba(0,0,0,0.04) 50%, transparent 100%);
+      transition: left 0.5s ease;
+      pointer-events: none;
+    }
+
+    .card-light:hover::before { left: 160%; }
+
+    .card-light::after {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #00c6ff, #7b2fff, #0072ff);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .card-light:hover::after { opacity: 1; }
+
+    .card-light:hover {
+      transform: translateY(-12px) scale(1.04);
+      box-shadow: 0 24px 50px rgba(0, 114, 255, 0.2), 0 0 0 1px rgba(0,198,255,0.2);
+      border-color: transparent;
+    }
+
+    .card-light a {
+      text-decoration: none;
+      color: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card-light a img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+      border: 2px solid rgba(0, 114, 255, 0.25);
+      box-shadow: 0 0 0 4px rgba(0, 114, 255, 0.06), 0 0 20px rgba(0, 114, 255, 0.15);
+      object-fit: cover;
+      transition: box-shadow 0.35s ease, transform 0.35s ease;
+    }
+
+    .card-light:hover a img {
+      box-shadow: 0 0 0 5px rgba(0,198,255,0.2), 0 0 35px rgba(0,198,255,0.5);
+      transform: scale(1.1);
+    }
+
+    .card-light a span {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: #1a1a2e;
+      transition: color 0.2s;
+    }
+
+    .card-light:hover a span { color: #0072ff; }
+
+    .card-light a .card-desc {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: #6b6b8a;
+      margin-top: 6px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 1200px) {
+      .grid-light { grid-template-columns: repeat(5, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .grid-light { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .grid-light { grid-template-columns: repeat(2, 1fr); padding: 0 24px 24px; }
+    }
+    @media (max-width: 380px) {
+      .grid-light { grid-template-columns: 1fr; }
+    }
   </style>
 <style type="text/css" id="operaUserStyle">
   video {
@@ -272,6 +388,13 @@
     <div class="card"><a href="https://copilot.microsoft.com/chats/AiqZ1ySRgDxRhWBVHJ63v" target="_blank"><img src="https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128" alt="Copilot Logo"><span>Copilot</span></a></div>
     <div class="card"><a href="https://www.kimi.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=kimi.com&sz=128" alt="Kimi Logo"><span>Kimi</span></a></div>
     <div class="card"><a href="https://app.gptzero.me/" target="_blank"><img class="gptzero-logo" src="https://www.google.com/s2/favicons?domain=gptzero.me&sz=128" alt="GPTZero Logo"><span>GPTZero</span></a></div>
+  </div>
+
+  <div class="grid-light">
+    <div class="card-light"><a href="https://app.grammarly.com" target="_blank"><img src="https://www.google.com/s2/favicons?domain=grammarly.com&sz=128" alt="Grammarly Logo"><span>Grammarly</span><span class="card-desc">AI writing & grammar assistant</span></a></div>
+    <div class="card-light"><a href="https://app.leonardo.ai" target="_blank"><img src="https://www.google.com/s2/favicons?domain=leonardo.ai&sz=128" alt="Leonardo AI Logo"><span>Leonardo AI</span><span class="card-desc">AI image & art generation</span></a></div>
+    <div class="card-light"><a href="https://inkr.app/dash?l=en" target="_blank"><img src="https://www.google.com/s2/favicons?domain=inkr.app&sz=128" alt="Inkr Logo"><span>Inkr</span><span class="card-desc">AI audio & video transcription</span></a></div>
+    <div class="card-light"><a href="https://suno.com/discover" target="_blank"><img src="https://www.google.com/s2/favicons?domain=suno.com&sz=128" alt="Suno Logo"><span>Suno</span><span class="card-desc">AI music & song generation</span></a></div>
   </div>
 
 
